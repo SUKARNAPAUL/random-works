@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int bubble;
+    for(bubble=0; bubble<bubble+1; bubble++){
+    int n,x,y;
+    printf("How many numbers do you want to sort?\n");
+    scanf("%d",&n);        // the quantity of numbers that we are going to sort
+    int arra[n-1];
+    printf("Write them having a space between them\n");
+    for(x=0;x<n;x++){
+        scanf("%d",&arra[x]);
+    }
+    int i,j,temp;
+    for(y=0;y<n;y++){
+    for(i=0;i<n;i++){
+        j=i+1;
+        if(arra[i]>arra[j]){
+        temp=arra[i];
+        arra[i]=arra[j];
+        arra[j]=temp;
+    }
+    }
+    }
+    for(y=0;y<n;y++){
+        printf("%d\t",arra[y]);
+    }
+    printf("\n");
+    }
+    return 0;
+}
